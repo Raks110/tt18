@@ -1,0 +1,74 @@
+<!-- Rakshit G. L. [170905054] -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TT'18|Login</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Pangolin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="login-format.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+<script type="text/javascript">
+	function showAdmin()
+	{
+		var name=document.getElementById("admin");
+		name.className="current";
+		var oname=document.getElementById("info");
+		oname.className="not";
+		var off=document.getElementById("second");
+		off.style.display="none";
+		var off=document.getElementById("first");
+		off.style.display="block";
+	}
+	function showInfo()
+	{
+		var name=document.getElementById("info");
+		name.className="current";
+		var oname=document.getElementById("admin");
+		oname.className="not";
+		var off=document.getElementById("second");
+		off.style.display="block";
+		var off=document.getElementById("first");
+		off.style.display="none";
+	}
+</script>
+<body>
+	<div class="wrapper">
+		<header>
+			Tech Tatva 2K18
+		</header>
+		<div class="container-0">
+			<ul class="list">
+				<li id="admin" class="current"><a href="#" onclick="showAdmin()"> Admin </a></li>
+				<li id="info" class="not"><a href="#" onclick="showInfo()"> Info-Desk </a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="container-1">
+				<p>
+					<form id="first">
+						<table cellspacing="3"><tr><td>
+							Username: </td><td><input type="text" placeholder="Your Username" name="user_admin"></td></tr>
+							<tr><td>Password: </td><td><input type="password" placeholder="Your Password" name="pass_admin"></td></tr>
+							<tr><td colspan="2"><br><input type="submit" name="submit_admin" value="login as system admin"></td></tr>
+						</table>
+					</form>
+					<form id="second">
+						<table cellspacing="3"><tr><td>
+							Username: </td><td><input type="text" placeholder="Your Username" name="user_info"></td></tr>
+							<tr><td>Password: </td><td><input type="password" placeholder="Your Password" name="pass_info"></td></tr>
+							<tr><td colspan="2"><br><input type="submit" name="submit_info" value="login as info-desk organizer"></td></tr>
+						</table>
+					</form>
+				</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container-2">
+			Copyright &copy The WD Community 2018
+		</div>
+	</footer>
+</body>
+</html>
