@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## Welcome to Tech Tatva Web-Dev Page 
 
-You can use the [editor on GitHub](https://github.com/Raks110/tt18/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Currently, the project is only front-end oriented. The code has been written using HTML, CSS and Javascript. Here are a few highlights of the project:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Front-End
 
-### Markdown
+### Responsive UI
+The interface adjusts itself to suit both mobile and wide-screen usage. The font sizes and container sizes decrease to increase reading efficiency and space.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Theme Switching
+Would you love to use the UI in both light and dark themes? Well, here it is. Switch on or off the lights based on your taste. _More themes are en route._ Plus, say goodbye to reloading the page to switch the theme. The theme switches automatically, saving all your form-entered data as well!
 
-```markdown
-Syntax highlighted code block
+### Always-on Tabs
+With both categories of logging on always visible on the screen, switching between them and logging in is made easier than ever.
 
-# Header 1
-## Header 2
-### Header 3
+### Beautiful Interface
+With _AMOLED-friendly_ and _sunlight-friendly_ interfaces to switch between plus the _translucent UI_ add up to the page's readability, usability and user-friendliness.
 
-- Bulleted
-- List
+# Back-End
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Raks110/tt18/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Coming Soon...
