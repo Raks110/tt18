@@ -1,0 +1,223 @@
+html{
+	height: 100%;
+}
+header{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	color: #000;
+	font-size: 40px;
+	margin-top: 3%;
+	line-height: 0.7em; 
+}
+body{
+	background-image: url(amoled-off.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+img{
+	padding-right: 2px;
+}
+.wrapper{
+	min-height: 85%;
+	position: relative;
+}
+.container{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	width: max-content;
+	margin: auto;
+	overflow: hidden;
+    background-color: rgba(1,1,1,0.2);
+    padding: 20px;
+    position: relative;
+    margin-top:0;
+    border-top:0;
+	border-radius: 20px;
+}
+.container-0{
+	color: #000;
+	font-weight: bold;
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 3.5%;
+	margin-bottom: 0; 
+}
+.current{
+	background-color: rgba(1,1,1,0.2);
+	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+}
+.container-1{
+	align-self: center;
+	color: #000;
+	font-family: 'Ubuntu', sans-serif;
+	align-content: center;
+	padding-bottom: 5px;
+	line-height: 23px;
+	font-size: 17px;
+	font-weight: bold;
+}
+.container-1 input[type="text"],.container-1 input[type="password"]{
+	font-family: 'Ubuntu', sans-serif;
+	background-color: rgba(1,1,1,0.4);
+	border-color: transparent;
+	border-radius: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+	font-weight: normal;
+	padding: 5px;
+}
+input[type="text"]:focus {
+	background-color: rgba(1,1,1,1);
+}
+input[type="password"]:focus {
+	background-color: rgba(1,1,1,1);
+}
+.container-1 input[type="submit"]{
+	background-color: rgba(1,1,1,0.4);
+	font-family: 'Pacifico', cursive;
+	border-color: transparent;
+	border-radius: 50px;
+	text-align: center;
+	color:#fff;
+	font-size: 18px;
+	width:100%;
+	padding: 2px;
+	font-weight: 200;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	transition-duration: 0.4s;
+	background-color: rgba(1,1,1,1);
+}
+.container-2{
+	align-content: center;
+	color: #111;
+	text-align: center;
+	position: relative;
+}
+.list{
+	list-style-type: none;
+	padding-left:10px;
+	display: flex;
+	flex-direction: row;
+	flex-basis: auto;
+	justify-content: center;
+	padding-bottom: 0;
+	border-bottom: 0;
+	margin-bottom: 0; 
+}
+.list li:first-child{
+	margin-right: 10px;
+}
+.list li{
+	padding: 10px;
+}
+#normal_text{
+	margin-top: 3.5%;
+	text-align: center;
+	display: block;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: #000;
+}
+#info_text {
+	margin-top: 3.5%;
+	text-align: center;
+	display: none;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: #000;
+}
+#admin_text {
+	margin-top: 3.5%;
+	text-align: center;
+	display: none;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: #000;
+}
+.not a{
+	text-decoration: none;
+	color: #000;
+}
+.current a{
+	text-decoration: none;
+	color: #fff;
+}
+#second{
+	display:none;
+}
+#lights_on{
+	display: none;
+	text-decoration: none;
+	color: #d1d1d1;
+	font-size: 13px;
+	padding-top: 0;
+}
+#lights_off{
+	text-decoration: none;
+	color: #000;
+	font-size: 13px;
+	padding-top: 0;
+}
+@media(max-width: 768px){
+	header{
+		margin-top: 10%;
+		font-size: 33px;
+	}
+    td{
+    	text-align: center;
+    	display: block;
+    	padding: 2px;
+    }
+    .wrapper{
+    	min-height: 87%
+    }
+    .container-0{
+    	font-size: 18px;
+    	margin-top: 10%; 
+    }
+    .container{
+    	padding:20px;
+    }
+    .container-1{
+    	font-size: 15px;
+    }
+    .container-1 input[type="text"],.container-1 input[type="password"]{
+    	font-size: 15px;
+    }
+    .container-1 input[type="submit"]{
+    	font-size: 15px;
+    }
+    footer{
+    	font-size: 13px;
+    }
+    #admin_text{
+    	margin-top: 10%;
+    	font-size: 12px;
+    }
+    #info_text{
+    	margin-top: 10%;
+    	font-size: 12px;
+    }
+    #normal_text{
+    	margin-top: 10%;
+    	font-size: 12px;
+    }
+    #lights_on{
+    	font-size: 10px;
+    }
+    #lights_off{
+    	font-size: 10px;
+    }
+}
