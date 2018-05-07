@@ -6,8 +6,54 @@
 	<link href="https://fonts.googleapis.com/css?family=Courgette|Lobster|Pacifico|Ubuntu" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="login-format.css" title="default"/>
 	<link rel="alternate stylesheet" type="text/css" href="login-format-light.css" title="alternate"/>
-	<script type="text/javascript" src="/scripts/styleswitcher.js"></script>
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		@media(max-width: 768px){
+		header{
+			margin-top: 10%;
+			font-size: 33px;
+		}
+	    td{
+	    	text-align: center;
+	    	display: block;
+	    	padding: 2px;
+	    }
+	    .wrapper{
+	    	min-height: 87%
+	    }
+	    .container-0{
+	    	font-size: 18px;
+	    	margin-top: 10%; 
+	    }
+	    .container{
+	    	padding:20px;
+	    }
+	    .container-1{
+	    	font-size: 15px;
+	    }
+	    .container-1 input[type="text"],.container-1 input[type="password"]{
+	    	font-size: 15px;
+	    }
+	    .container-1 input[type="submit"]{
+	    	font-size: 15px;
+	    }
+	    footer{
+	    	font-size: 13px;
+	    }
+	    #admin_text{
+	    	margin-top: 10%;
+	    	font-size: 12px;
+	    }
+	    #info_text{
+	    	margin-top: 10%;
+	    	font-size: 12px;
+	    }
+	    #normal_text{
+	    	margin-top: 10%;
+	    	font-size: 12px;
+	    }
+	}
+	</style>
 </head>
 <script type="text/javascript">
 	function sleep(milliseconds) {
@@ -122,12 +168,11 @@
 		}
 		return '' ;
 	}
-
 </script>
 <body onload="set_style_from_cookie()">
 	<div class="wrapper">
 		<header>
-			Tech Tatva 2K18<br><a href="#" onclick="switch_style('alternate'); return false;" id="lights_on"><img src="lights_off.png" height="13" width="13">Switch on lights</a><a href="#" onclick="switch_style('default'); return false;" id="lights_off"><img src="lights_on.png" height="13" width="13">Switch off lights</a>
+			Tech Tatva 2K18<br><a href="#" onclick="switch_style('alternate'); return false;" id="lights_on"><img src="lights_off.png" height="13" width="13">Click to switch on lights</a><a href="#" onclick="switch_style('default'); return false;" id="lights_off"><img src="lights_on.png" height="13" width="13">Click to switch off lights</a>
 		</header>
 		<div id="normal_text">Welcome to the journey into the Tatva.<br>&nbsp</div>
 		<div id="admin_text">You can login as a System Admin here.<br>Click the tab and enter your credentials to continue.</div>
