@@ -7,11 +7,15 @@ header{
 	color: #fff;
 	font-size: 40px;
 	margin-top: 3%;
+	line-height: 0.7em; 
 }
 body{
 	background-image: url(amoled.jpg);
 	background-position: center top;
 	height: 100%;
+}
+img{
+	padding-right: 2px;
 }
 .wrapper{
 	min-height: 85%;
@@ -115,7 +119,7 @@ input[type="submit"]:hover {
 	padding: 10px;
 }
 #normal_text{
-	margin-top: 5%;
+	margin-top: 3.5%;
 	text-align: center;
 	display: block;
 	font-size: 15px;
@@ -124,7 +128,7 @@ input[type="submit"]:hover {
 	color: #d1d1d1;
 }
 #info_text {
-	margin-top: 5%;
+	margin-top: 3.5%;
 	text-align: center;
 	display: none;
 	font-size: 15px;
@@ -133,7 +137,7 @@ input[type="submit"]:hover {
 	color: #d1d1d1;
 }
 #admin_text {
-	margin-top: 5%;
+	margin-top: 3.5%;
 	text-align: center;
 	display: none;
 	font-size: 15px;
@@ -151,6 +155,19 @@ input[type="submit"]:hover {
 }
 #second{
 	display:none;
+}
+#lights_on{
+	text-decoration: none;
+	color: #d1d1d1;
+	font-size: 13px;
+	padding-top: 0;
+}
+#lights_off{
+	display: none;
+	text-decoration: none;
+	color: #d1d1d1;
+	font-size: 13px;
+	padding-top: 0;
 }
 @media(max-width: 768px){
 	header{
