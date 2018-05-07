@@ -3,15 +3,20 @@
 <html>
 <head>
 	<title>TT'18|Login</title>
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Pangolin" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Lobster|Pacifico|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="login-format.css">
 	<meta name="viewport" content="width=device-width">
 </head>
 <script type="text/javascript">
-	function showAdmin()
-	{
+	function sleep(milliseconds) {
+  		var start = new Date().getTime();
+  		for (var i = 0; i < 1e7; i++) {
+    		if ((new Date().getTime() - start) > milliseconds){
+      			break;
+    		}
+  		}
+	}
+	function showAdmin(){
 		var name=document.getElementById("admin");
 		name.className="current";
 		var oname=document.getElementById("info");
@@ -21,8 +26,7 @@
 		var off=document.getElementById("first");
 		off.style.display="block";
 	}
-	function showInfo()
-	{
+	function showInfo(){
 		var name=document.getElementById("info");
 		name.className="current";
 		var oname=document.getElementById("admin");
@@ -32,23 +36,61 @@
 		var off=document.getElementById("first");
 		off.style.display="none";
 	}
+	function showAdminText(){
+        var off=document.getElementById("info_text");
+		off.style.display="none";
+		var off=document.getElementById("normal_text");
+		off.style.display="none";
+		var off=document.getElementById("admin_text");
+		off.style.display="block";		
+	}
+	function showInfoText(){
+		var off=document.getElementById("admin_text");
+		off.style.display="none";
+		var off=document.getElementById("normal_text");
+		off.style.display="none";
+		var off=document.getElementById("info_text");
+		off.style.display="block";
+	}
+	function showNormalText(){
+		var off=document.getElementById("admin_text");
+		off.style.display="none";
+		var off=document.getElementById("normal_text");
+		off.style.display="block";
+		var off=document.getElementById("info_text");
+		off.style.display="none";
+	}
+	function showText(){
+		var find=document.getElementById("first");
+		if(find.style.display=="none")
+			showInfoText();
+		else
+			showAdminText();
+	}
+	function showNormal(){
+		sleep(400);
+		showNormalText();
+	}
 </script>
 <body>
 	<div class="wrapper">
 		<header>
 			Tech Tatva 2K18
 		</header>
+		<div id="normal_text">Welcome to the journey into the Tatva.<br>&nbsp</div>
+		<div id="admin_text">You can login as a System Admin here.<br>Click the tab and enter your credentials to continue.</div>
+		<div id="info_text">You can login as an Info-Desk Organizer here.<br>Click the tab and enter your credentials to continue.</div>
 		<div class="container-0">
 			<ul class="list">
-				<li id="admin" class="current"><a href="#" onclick="showAdmin()"> Admin </a></li>
-				<li id="info" class="not"><a href="#" onclick="showInfo()"> Info-Desk </a></li>
+				<li id="admin" class="current"><a href="#" onmouseover="showAdminText()" onmouseleave="showNormalText()" onclick="showAdmin()"> Admin </a></li>
+				<li id="info" class="not"><a href="#" onmouseover="showInfoText()" onmouseout="showNormalText()" onclick="showInfo()"> Info-Desk </a></li>
 			</ul>
 		</div>
-		<div class="container">
+		<div class="container" onmouseover="showText()" onmouseleave="showNormal()">
 			<div class="container-1">
 				<p>
 					<form id="first">
-						<table cellspacing="3"><tr><td>
+						<table cellspacing="3" onmouseover="showAdminText()" onmouseleave="showNormalText()"><tr><td>
 							Username: </td><td><input type="text" placeholder="Your Username" name="user_admin"></td></tr>
 							<tr><td>Password: </td><td><input type="password" placeholder="Your Password" name="pass_admin"></td></tr>
 							<tr><td colspan="2"><br><input type="submit" name="submit_admin" value="login as system admin"></td></tr>
